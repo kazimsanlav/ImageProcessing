@@ -23,7 +23,7 @@ function setup() {
 
 	//slider for vidScale
 	var scaleSlider = createSlider(8, 32, 16, 8);
-	scaleSlider.position(windowWidth / 2 - 250, windowHeight - 35);
+	scaleSlider.position(windowWidth / 2 - 175, windowHeight - 35);
 	scaleSlider.changed(function () {
 		vidScale = this.value();
 		video = createCapture(VIDEO);
@@ -33,7 +33,7 @@ function setup() {
 
 	//create checkbox for color
 	var checkcolor = createCheckbox('Color');
-	checkcolor.position(windowWidth / 2 + 200, windowHeight - 35);
+	checkcolor.position(windowWidth / 2 + 75, windowHeight - 35);
 	checkcolor.style('color', '#fff');
 	checkcolor.changed(function () {
 		b_w = !b_w;
